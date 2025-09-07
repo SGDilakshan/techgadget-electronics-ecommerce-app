@@ -1,0 +1,27 @@
+{
+  "server": {
+    "port": 5000,
+    "environment": "development"
+  },
+  "database": {
+    "uri": "mongodb://localhost:27017/giftify",
+    "options": {
+      "useNewUrlParser": true,
+      "useUnifiedTopology": true
+    }
+  },
+  "jwt": {
+    "secret": "your_jwt_secret_key_here",
+    "expiresIn": "7d"
+  },
+  "cors": {
+    "origin": ["http://localhost:5173", "http://localhost:3000"],
+    "credentials": true
+  },
+  "rateLimit": {
+    "max": 100
+  },
+  "stripe": {
+    "webhookSecret": "your_stripe_webhook_secret"
+  }
+}
